@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../src/8e73f69fc3.js"></script>
+    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../images/thirdParty/assets/iziToast.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Ethereal</title>
+</head>
+<body>
+    <div class="login-container">
+    <div class="logo">
+        <img src="../images/logo.jpg" width="140px" id="logo" alt="">
+    </div>
+
+    <div class="main-content">
+        <h2>Welcome to Ethereal</h2>
+        <input id="license" type="text" placeholder="XXXX-XXXX-XXXX-XXXX">
+        <button id="reset"><i class="fas fa-redo"></i></button>
+        <div class="login">
+            <button id="login-btn">Login</button>
+            <div class="loader" id="loader">
+                <div class="loader__ball" id="loader__ball"></div>
+                <div class="loader__ball" id="loader__ball2"></div>
+                <div class="loader__ball" id="loader__ball3"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="version" id="version">
+        <span class="dot"></span>
+        <p id ="loginversion" style="color: #fff;">Version 0.2.0</p>
+    </div>
+
+    <script src="../src/login.js"></script>
+    <script src="../images/thirdParty/js/iziToast.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8e73f69fc3.js"></script>
+    <link rel="stylesheet" href="../styles/settings.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Ethereal</title>
+</head>
+<body>
+    <nav>
+        <ul>
+              <li>
+               <a href="dashboard.html">Dashboard
+                <span></span><span></span><span></span><span></span>
+                </a>
+              </li>
+              <li>
+                <a href="options.html">Modules
+                 <span></span><span></span><span></span><span></span>
+                 </a>
+               </li>
+               <li>
+                <a href="profiles.html">Profiles
+                 <span></span><span></span><span></span><span></span>
+                 </a>
+               </li>
+               <li>
+                <a href="#">Settings
+                 <span></span><span></span><span></span><span></span>
+                 </a>
+               </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="delays active" id="delays">
+            <div class="left-container">
+            <i class="fas fa-tachometer-alt"></i>
+            <h2>Delays</h2>
+            <div class="toggle-delays"></div>
+            </div>
+
+            <div class="right-container right-delays active">
+                <div class="content">
+                <p>Zalando delay</p>
+                <input type="text" placeholder="3000" id="zalando-delay">
+                <p>Naked delay</p>
+                <input type="text" placeholder="3000" id="naked-delay">
+                <p>SNS delay</p>
+                <input type="text" placeholder="3000" id="sns-delay">
+                <p>Offspring delay</p>
+                <input type="text" placeholder="3000" id="os-delay">
+                </div>
+            </div>
+        </div>
+
+        <div class="main" id="main">
+            <div class="left-container">
+            <i class="fas fa-sliders-h"></i>
+            <h2>Settings</h2>
+            <div class="toggle-main"></div>
+            </div>
+
+            <div class="right-container right-main">
+                <div class="content">
+                    <p id="webhook-text">Discord webhook</p>
+                    <input type="text" id="webhook" placeholder="Webhook URL">
+                    <p id="profile-text">Default profile</p>
+                    <select name="select-default-profile" id="default-select">
+                        <option value="Foot Revo 1">Foot Revo 1</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="key-info" id="key-info">
+            <div class="left-container">
+            <i class="fa fa-key"></i>
+            <h2>Key Info</h2>
+            <div class="toggle-key"></div>
+            </div>
+
+            <div class="right-container right-key">
+                <div class="content">
+                <img src="../images/foot.png" width="80px" style="border-radius: 50%;" alt="">
+                <p>Key</p>
+                <p id="license" class="secondary">XXXX-XXXX-XXXX-XXXX</p>
+                <p>Type</p>
+                <p id="license-type" class="secondary">Lifetime</p>
+                <p>Renewal</p>
+                <p id="license-renewal" class="secondary">23/09/2099</p>
+                <p>Unbindable</p>
+                <p id="license-unbindable" class="secondary">False</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+    const delays = document.querySelector('.delays');
+    const main = document.querySelector('.main');
+    const keyInfo = document.querySelector('.key-info');
+
+    const delaysInner = document.querySelector('.right-delays');
+    const mainInner = document.querySelector('.right-main');
+    const keyInner = document.querySelector('.right-key');
+
+    document.querySelector('.toggle-key').onclick = function(){
+        this.classList.toggle('active')
+        keyInfo.classList.toggle('active');
+        keyInner.classList.toggle('active');
+    }
+
+    document.querySelector('.toggle-main').onclick = function(){
+        this.classList.toggle('active')
+        main.classList.toggle('active');
+        mainInner.classList.toggle('active');
+    }
+
+    document.querySelector('.toggle-delays').onclick = function(){
+        this.classList.toggle('active')
+        delays.classList.toggle('active');
+        delaysInner.classList.toggle('active');
+    }
+</script>
+</body>
+</html>

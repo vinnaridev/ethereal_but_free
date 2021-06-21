@@ -1,0 +1,266 @@
+{
+	"short_name": "Ethereal Scripts",
+	"name": "Ethereal Scripts",
+	"manifest_version": 2,
+	"description": "Your favourite Snipes, Zalando, Solebox & more killer.",
+	
+	"version": "1.2.5",
+	"icons": {
+		"128": "images/logo2.png"
+	},
+	"browser_action": {
+		"default_icon": "images/logo2.png",
+		"default_title": "Ethereal Scripts"
+	
+	},
+	
+	"background": {
+		"scripts": ["src/background.js"]
+	},
+	"commands": {
+		
+        "open-checkout-checkout": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+E",
+                "windows": "Ctrl+Shift+E",
+                "mac": "Command+Shift+E",
+                "linux": "Ctrl+Shift+E"
+            },
+            "description": "Checkout Redirect"
+		},
+		"zalando-masscart": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+E",
+                "windows": "Ctrl+Shift+E",
+                "mac": "Command+Shift+E",
+                "linux": "Ctrl+Shift+E"
+            },
+            "description": "Zalando Masscart"
+		}
+		
+    },
+
+		
+	"content_scripts": [{
+		"matches": [
+			"https://*/*", "http://*/*"
+		],
+		"js": [
+			"images/thirdParty/js/iziToast.min.js"
+		],
+		
+		"css": [
+			"images/thirdParty/assets/iziToast.min.css"
+		],
+		"all_frames": true
+	},
+	
+	{
+		"matches": [
+			"https://*.zalando.de/*","https://*.zalando.sk/*","https://*.zalando.fi/*","https://*.zalando.ch/*","https://*.zalando.fi/*","https://*.zalando.nl/*","https://*.zalando.it/*","https://*.zalando.cz/*","https://*.zalando.se/*", "https://*.zalando.at/*","https://*.zalando.fr/*","https://*.zalando.pl/*","https://*.zalando.be/*","https://*.zalando.co.uk/*","https://*.zalando.es/*","https://*.checkout.payment.zalando.com/*", "https://card-entry-service.zalando-payments.com/*"
+		],
+		"js": [
+			"src/sites/zalando.js"
+		],
+		
+		"all_frames": true
+	},
+	{
+		"matches": [
+			"https://www.supremenewyork.com/*"
+		],
+		"js": [
+			"src/sites/supreme.js"
+		]
+	},
+	{
+		"matches": [
+			"https://www.nakedcph.com/*"
+		],
+		"js": [
+			"src/sites/naked.js"
+		],
+		"all_frames": false
+		
+	},
+	{
+		"matches": [
+			"https://www.onygo.com/*"
+		],
+		"js": [
+			"src/sites/onygo.js"
+		],
+		"all_frames": false
+		
+	},
+	{
+		"matches": [
+			"https://footdistrict.com/*","https://footdistrict.es/*","https://footdistrict.de/*","https://footdistrict.it/*","https://footdistrict.nl/*","https://checkoutshopper-live.adyen.com/*"
+		],
+		"js": [
+			"src/sites/ftd-milky.js"
+		],
+		"all_frames": true
+		
+	},
+	{
+		"matches": [
+			"https://www.courir.com/*"
+		],
+		"js": [
+			"src/sites/courir.js"
+		],
+		"all_frames": false
+		
+	},
+
+	{
+		"matches": [
+			"https://www.sneakersnstuff.com/*"
+		],
+		"js": [
+			"src/sites/sns.js"
+		],
+		"all_frames": false
+		
+	},
+
+	{
+		"matches": [
+			"https://www.solebox.com/*"
+		],
+		"js": [
+			"src/sites/solebox.js"
+		],
+		"all_frames": false
+		
+	},
+	{
+		"matches": [
+			"https://www.solebox.com/*"
+		],
+		"js": [
+			"src/sites/solebox.js"
+		],
+		"all_frames": false
+		
+	},
+	{
+		"matches": [
+			"https://*/*", "http://*/*"
+		],
+		"js": [
+		 "src/sites/general.js","src/sites/paypal.js"
+		],
+		"exclude_matches": [
+			"https://www.supremenewyork.com/*",
+			"https://www.paypal.com/*",
+			"https://www.stockx.com/*"
+			
+		],
+		"all_frames": true
+		
+	},
+	{
+		"matches": [
+			"https://en.aw-lab.com/*"
+		],
+		"js": [
+			"src/sites/awlab.js"
+		],
+		"all_frames": true
+		
+	},
+	{
+		"matches": [
+			"https://www.paypal.com/*"
+		],
+		"js": [
+			"src/sites/paypal.js"
+		],
+		"all_frames": true
+		
+	},
+	{
+		"matches": [
+			"https://www.luisaviaroma.com/*"
+		],
+		"js": [
+			"src/sites/lvr.js"
+		],
+		"all_frames": false
+		
+	},
+	{
+		"matches": [
+			"https://www.mrporter.com/*"
+		],
+		"js": [
+			"src/sites/mrporter.js"
+		],
+		"all_frames": false
+		
+	},
+	{
+		"matches": [
+			"https://www.basket4ballers.com/*"
+		],
+		"js": [
+			"src/sites/b4b.js"
+		],
+		"all_frames": false
+		
+	},
+	{
+		"matches": [
+			"https://www.snipes.com/*","https://www.snipes.at/*","https://www.snipes.it/*","https://www.snipes.nl/*","https://www.snipes.be/*","https://www.snipes.es/*","https://www.snipes.fr/*","https://www.snipes.ch/*"
+		],
+		"js": [
+			"src/sites/snipes.js"
+		],
+		"all_frames": false
+		
+	},
+	{
+		"matches": [
+			"https://www.basket4ballers.com/*"
+		],
+		"js": [
+			"src/sites/b4b.js"
+		],
+		"all_frames": false
+		
+	},
+	{
+		"matches": [
+			"https://www.office.co.uk/*"
+		],
+		"js": [
+			"src/sites/office.js"
+		],
+		"all_frames": false
+		
+	}
+	
+	
+],
+		
+	
+	"permissions": [
+		"clipboardWrite",
+		"activeTab",
+		"notifications",
+		"contextMenus",
+		"tabs",
+		"storage",
+		"http://*/",
+		"https://*/",
+		"cookies",
+		"tabs",
+		"<all_urls>"
+	],
+	
+	
+	"content_security_policy" : "script-src 'self' 'unsafe-eval'; object-src 'self';"
+	
+}

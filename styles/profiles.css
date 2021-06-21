@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins';
+    background: #0a0c12;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background: var(--input-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 5px;
+}
+
+:root {
+    --main-color: #2ce98e;
+    --input-bg: #131621;
+    --background: #0c0e15;
+}
+
+button{
+    cursor: pointer;
+    color: #fff;
+}
+
+input {
+    padding: 10px 25px;
+    border: none;
+    background: var(--input-bg);
+    margin-bottom: .5em;
+    border-radius: 5px;
+    color: #fff;
+}
+
+input:focus {
+    outline: none;
+}
+
+select {
+    padding: 8px 25px;
+    border: none;
+    background: var(--input-bg);
+    color: #fff;
+    outline: none;
+    width: 49.5%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    color: var(--main-color);
+    font-size: 16px;
+    border: 0.3em solid var(--main-color);
+    border-radius: 0.5em;
+    width: 12em;
+    height: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 1em;
+}
+
+nav ul li span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--main-color);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+ul li:hover a {
+    color: #fff;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+nav ul li:hover {
+    color: black;
+}
+
+nav ul li:hover span {
+    transform: translateY(0) scale(2);
+}
+
+nav ul li span:nth-child(1) {
+    --n: 1;
+}
+
+nav ul li span:nth-child(2) {
+    --n: 2;
+}
+
+nav ul li span:nth-child(3) {
+    --n: 3;
+}
+
+nav ul li span:nth-child(4) {
+    --n: 4;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+}
+
+.inputs-left {
+    height: 700px;
+    width: 600px;
+    background: var(--background);
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputs-left .title {
+    text-align: center;
+    color: #fff;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.inputs-left .inputs {
+    width: 500px;
+    height: 600px;
+}
+
+#f-name {
+    width: 250px;
+    margin-right: 0;
+}
+
+#zip {
+    width: 145.5px;
+}
+
+#email {
+    width: 280px;
+}
+
+#phone {
+    width: 115.5px;
+}
+
+#address1 {
+    width: 48%;
+}
+
+#address2 {
+    width: 31.1%;
+}
+
+#city {
+    width: 39.1%;
+}
+
+#state {
+    margin-left: 1px;
+    width: 49.9%
+}
+
+#country {
+    width: 49%;
+}
+
+#pname {
+    width: 40%;
+}
+
+#card-number {
+    width: 60%;
+}
+
+#card-cvv {
+    width: 19.1%;
+}
+
+.profile-right {
+    
+    width: 600px;
+    height: 700px;
+    background: var(--input-bg);
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-right .title {
+    text-align: center;
+    color: #fff;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.profile-right .card {
+    width: 400px;
+    height: 250px;
+    margin-top: 1em;
+    border-radius: 10px;
+    background: linear-gradient(45deg, var(--main-color), #84f4cc);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#f-name-mirror {
+    margin: 1em 1em 0 1em;
+    height: 50px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+#card-number-mirror {
+    font-size: 20px;
+    font-weight: 700;
+    bottom: 0;
+    height: 50px;
+    color: #fff;
+    margin: 
+    1em 1em 1em 1em;
+}
+
+#expiry-cvv {
+    font-size: 15px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 1em -1em 1em;
+    color: #fff;
+}
+
+.billing-title {
+    color: #fff;
+}
+

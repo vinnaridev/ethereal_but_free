@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../src/8e73f69fc3.js"></script>
+    <link rel="stylesheet" href="../styles/dashboard.css">
+    <link rel="stylesheet" href="../styles/profiles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Ethereal</title>
+</head>
+<body>
+    <nav>
+        <ul>
+              <li>
+               <a id="nav-main" href="#dashboardpage">Dashboard
+                <span></span><span></span><span></span><span></span>
+                </a>
+              </li>
+              <li>
+                <a href="options.html">Modules
+                 <span></span><span></span><span></span><span></span>
+                 </a>
+               </li>
+               <li>
+                <a href="#profilespage">Profiles
+                 <span></span><span></span><span></span><span></span>
+                 </a>
+               </li>
+               <li>
+                <a href="settings.html">Settings
+                 <span></span><span></span><span></span><span></span>
+                 </a>
+               </li>
+        </ul>
+    </nav>
+
+
+  
+       
+    
+    <section id="profilespage">
+        <div class="container">
+
+            <div class="inputs-left">
+                <p class="title" style="text-align: center;">Shipping Details</p>
+                <div class="inputs">
+                <input type="text" class="f-name" id="f-name" placeholder="Full name">
+                <input type="text" class="zip" id="zip" placeholder="Zip">
+                <input type="text" class="email" id="email" placeholder="Email">
+                <input type="text" class="phone" id="phone" placeholder="Phone number">
+                <input type="text" class="address1" id="address1" placeholder="Address 1">
+                <input type="text" class="address2" id="address2" placeholder="Address 2">
+                <input type="text" class="city" id="city" placeholder="City">
+                <input type="text" class="state" id="state" placeholder="State">
+                <input type="text" class="country" id="country" placeholder="Country">
+                <input type="text" class="pname" id="pname" placeholder="Profile name">
+
+                <div class="billing">
+                    <p class="billing-title" style="text-align: center; color: #fff; margin: 2em 0 1em 0;">Billing</p>
+                    <input type="text" class="card" id="card-number" placeholder="Card number">
+                    <input type="text" class="cvv" id="card-cvv" placeholder="CVV">
+                    <select id="month">
+                        <option value="Select month" disabled selected>Select month</option>
+                    </select>
+                    <select id="year">
+                        <option value="Select year" disabled selected>Select year</option>
+                    </select>
+                </div>
+
+                <div class="save">
+                    <button id="save-profile">Save profile</button>
+                </div>
+                </div>
+            </div>
+
+            <div class="profile-right">
+                <p class="title">Other information</p>
+                <div class="card">
+                    <div class="top">
+                        <div id="f-name-mirror"></div>
+                    </div>
+
+                    <div class="bottom">
+                        <div class="expiry-cvv" id="expiry-cvv">
+                            <div class="cvv-mirror" id="cvv-mirror"></div>
+                        </div>
+                        <div class="card-number-mirror" id="card-number-mirror"></div>
+                    </div>
+                </div>
+
+                <p class="title">Any information vx wants under here</p>
+            </div>
+
+            <!--    <div class="profiles-container">
+                    <div class="profile">
+                        <p id="profile-name">Foot Revo 21</p>
+                        <div class="card-info">
+                        <p id="card-name">Muhammad Foot</p>
+                        <h4 id="card-number"><span style="filter: blur(5px);">5349 4310 5319</span> 6922</h4>
+                        </div>
+                    </div>
+                </div>
+            -->
+        </div>
+    </section>
+
+
+    <script>
+        const navigation = document.querySelector('.navigation');
+        const navigation2 = document.querySelector('.navigation2');
+        document.querySelector('.toggle').onclick = function(){
+            this.classList.toggle('active')
+            navigation.classList.toggle('active');
+            navigation2.classList.toggle('active2');
+        }
+    </script>
+</body>
+</html>

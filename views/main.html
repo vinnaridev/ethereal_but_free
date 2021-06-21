@@ -1,0 +1,2979 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<script src="../src/8e73f69fc3.js">
+	</script>
+	<link href="../styles/dashboard.css" rel="stylesheet">
+	<link href="../styles/profiles.css" rel="stylesheet">
+	<link href="../styles/options.css" rel="stylesheet">
+	<link href="../styles/settings.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../images/thirdParty/assets/iziToast.min.css">
+
+	<title>Ethereal</title>
+	
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li id="dashboardLi">
+				<a id="dashboardid">Dashboard <span></span><span></span><span></span><span></span></a>
+			</li>
+
+
+			<li id="modulesLi">
+				<a id="modulesid">Modules <span></span><span></span><span></span><span></span></a>
+			</li>
+
+
+			<li id="profilesLi">
+				<a id="profilesid">Profiles <span></span><span></span><span></span><span></span></a>
+			</li>
+
+
+			<li id="settingsLi">
+				<a id="settingsid">Settings <span></span><span></span><span></span><span></span></a>
+			</li>
+		</ul>
+	</nav>
+
+
+	<div class="page" id="Page1" style="">
+		<div class="container">
+			<div class="cover">
+				<div class="navigation">
+					<ul>
+						<li>
+							<a id="resetbtn"><span class="icon" style="color: #fff;"><i class="fas fa-redo"></i></span> <span  class="title" style="color: #fff;">Reset</span></a>
+						</li>
+
+
+						<li>
+							<a href="https://ethereal.metalabs.group/dashboard"><span class="icon" style="color: #fff;"><i class="fas fa-money-check-alt"></i></span> <span class="title" style="color: #fff;">Manage Subscription</span></a>
+						</li>
+
+
+						<li>
+							<a href="https://discord.com/channels/799780267585568808/"><span class="icon" style="color: #fff;"><i class="fab fa-discord"></i></span> <span class="title" style="color: #fff;">Discord</span></a>
+						</li>
+
+
+						<li>
+							<a href="https://etherealscript.gitbook.io/ethereal-1-0/""><span class="icon" style="color: #fff;"><i class="fas fa-book"></i></span> <span class="title" style="color: #fff;">Guide</span></a>
+						</li>
+					</ul>
+				</div>
+
+
+				<div class="toggle">
+				</div>
+
+
+				<div class="navigation2">
+					<ul>
+						<li>
+							<a id="deactivate"><span class="icon" style="color: #ea677d;"><i class="fas fa-times"></i></span> <span class="title" style="color: #ea677d;">Deactivate</span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+
+			<div class="changelogs">
+				<p class="title">Changelogs & News</p>
+				<div id="changelogslist">
+	
+				</div>
+			</div>
+
+
+			<div class="column">
+				<div class="checkouts">
+					<p class="title">Statistics</p>
+
+
+					<div class="stats">
+						<div class="spent">
+							<h1 id="spentmoney"><span>$</span>4,204</h1>
+
+
+							<h4 style="text-transform: uppercase;">Spent</h4>
+						</div>
+
+
+						<div class="success">
+							<h1 id="totalcheckouts">270</h1>
+
+
+							<h4 style="text-transform: uppercase;">Checkouts</h4>
+						</div>
+
+
+						<div class="fail">
+							<h1 id="totalfails">17</h1>
+
+
+							<h4 style="text-transform: uppercase;">Errors</h4>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="recent-checkouts">
+					<p class="title">Recent 2 Checkouts</p>
+
+
+					<div class="header">
+						<p>Product</p>
+
+
+						<p>Site</p>
+					</div>
+
+					<div id="checkoutlist">
+						
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="page" id="Page2" style="display:none">
+		<div class="container">
+			<div class="sites-left">
+				<p style="color: #fff;">Select site</p>
+
+				<div class="site general active" id="general">
+					<button class="enable-general" id="enable-general">General</button>
+
+					<p>General section including autofill & more</p>
+				</div>
+
+				<div class="site zalando" id="zalando">
+					<button class="enable-zalando" id="enable-zalando">Zalando</button>
+
+					<p>Click the text saying Zalando to have a look and utilize our modules related to Zalando</p>
+				</div>
+
+
+
+				<div class="site solebox" id="solebox">
+					<button id="enable-solebox">Solebox</button>
+
+					<p>Click the text saying Solebox to have a look and utilize our modules related to Solebox</p>
+				</div>
+
+
+				<div class="site snipes" id="snipes">
+					<button id="enable-snipes">Snipes</button>
+
+					<p>Click the text saying Snipes to have a look and utilize our modules related to Snipes</p>
+				</div>
+
+
+				<div class="site onygo" id="onygo">
+					<button id="enable-onygo">Onygo</button>
+
+					<p>Click the text saying Onygo to have a look and utilize our modules related to Onygo</p>
+				</div>
+
+
+				<div class="site sns" id="sns">
+					<button id="enable-sns">SNS</button>
+
+					<p>Click the text saying SNS to have a look and utilize our modules related to SNS</p>
+				</div>
+
+
+				<div class="site naked" id="naked">
+					<button id="enable-naked">Naked</button>
+
+					<p>Click the text saying naked to have a look and utilize our modules related to naked</p>
+				</div>
+
+
+				<div class="site os" id="os">
+					<button id="enable-os">Offspring</button>
+
+					<p>Click the text saying Offspring to have a look and utilize our modules related to Offspring</p>
+				</div>
+				<div class="site footdistrict" id="footdistrict">
+					<button id="enable-footdistrict">Footdistrict</button>
+
+					<p>Click the text saying Footdistrict to have a look and utilize our modules related to Footdistrict</p>
+				</div>
+				<div class="site b4b" id="b4b">
+					<button id="enable-b4b">Basket4Ballers</button>
+
+					<p>Click the text saying Basked4Ballers to have a look and utilize our modules related to Basked4Ballers</p>
+				</div>
+				<div class="site lvr" id="lvr">
+					<button id="enable-lvr">Luisa Via Roma</button>
+
+					<p>Click the text saying Luisa Via Roma to have a look and utilize our modules related to Luisa Via Roma</p>
+				</div>
+				<div class="site office" id="office">
+					<button id="enable-office">Office</button>
+
+					<p>Click the text saying Office to have a look and utilize our modules related to Office</p>
+				</div>
+				<div class="site mrporter" id="mrporter">
+					<button id="enable-mrporter">Mr Porter</button>
+
+					<p>Click the text saying Mr Porter to have a look and utilize our modules related to Mr Porter</p>
+				</div>
+				<div class="site courir" id="courir">
+					<button id="enable-courir">Courir (Locked)</button>
+
+					<p>Click the text saying Courir to have a look and utilize our modules related to Courir</p>
+				</div>
+				<div class="site awlab" id="awlab">
+					<button id="enable-awlab">Aw-lab</button>
+
+					<p>Click the text saying Aw-lab to have a look and utilize our modules related to Mr Porter</p>
+				</div>
+				
+			</div>
+
+
+			<div class="options-right">
+				<div class="general-right" id="general-content">
+					<p style="margin: 1em 0 1em 1em; color: #fff;">General</p>
+
+					<div class="default">
+						<button class="enable save" id="savebutton">Save</button>
+					</div>
+					<div class="mode">
+						<p>General settings</p>
+						
+						<button class="normal enable-button" id="autofill">Autofill</button> <button class="normal enable-button" id="captcha-click">Captcha Click</button> <button class="normal enable-button" id="paypal-autopay">PayPal Login</button> <hidden button class="normal enable-button" id="stripe-autopay"></button> 
+							
+						</div>
+						<div class="account">
+							<p>PayPal Account</p>
+							<input id="paypal-mail"placeholder="Account email" type="text"> <input id="paypal-password" placeholder="Account password" type="text">
+						
+						</div>
+					<div class="mode">
+						
+						<hidden button class="normal enable-button" id="shopify-autocart"></button> <hidden button class="normal enable-button" id="shopify-redirect"></button> <hidden button class="normal enable-button" id="shopify-autocheckout"></button> 
+					</div>
+					<div class="mode">
+						<p>Supreme settings</p>
+						<button class="normal enable-button" id="supreme-autocart">Autocart</button> <button class="normal enable-button" id="supreme-redirect">Redirect Checkout</button> <button class="normal enable-button" id="supreme-autocheckout">Auto Checkout</button> 
+						
+					</div>
+					<div class="size" style="color: #fff;">
+						<div class="multi-select-supreme" >
+							<label class="toggle-open-supreme" for="toggle-open-supreme">Select Size</label> <input id="toggle-open-supreme" type="checkbox">
+
+							<ul class="multi-select-options-supreme" id="supreme-size-dropdown">
+								<li><label><input data-state="Random" name="sizes" type="checkbox" value="random"><span>Random</span></label>
+								</li>
+
+
+								<li><label><input data-state="S" name="sizes" type="checkbox" value="Small"><span>S</span></label>
+								</li>
+
+
+								<li><label><input data-state="M" name="sizes" type="checkbox" value="Medium"><span>M</span></label>
+								</li>
+
+
+								<li><label><input data-state="L" name="sizes" type="checkbox" value="Large"><span>L</span></label>
+								</li>
+
+
+								<li><label><input data-state="xl5" name="sizes" type="checkbox" value="XLarge"><span>XL</span></label>
+								</li>
+								
+							</ul>
+						</div>
+					</div>
+					
+					<hidden input id="linkappender"placeholder="Linkappender" type="text" style="width: 400px;">
+				</div>
+
+				<div class="zalando-right" id="zalando-content">
+					<p style="margin: 1em 0 1em 1em; color: #fff;">Zalando</p>
+
+
+					<div class="default">
+					
+						<button class="enable-button" id="default-enable">Enable Zalando</button>
+						<button class="enable save" id="savebutton">Save</button>
+					</div>
+
+
+					<div class="account">
+						<p>Account</p>
+						<input id="zalandoAccountEmail"placeholder="Account email" type="text"> <input id="zalandoAccountPassword" placeholder="Account password" type="text"> <input id="zalandoDiscountCode" placeholder="Discount" type="text"> <button class="normal enable-button" id="zalando-request-login">Login
+					</div>
+
+
+					<div class="mode">
+						<p>Mode</p>
+						<button class="normal enable-button" id="zalando-request">Ethereal Mini</button> <button class="normal enable-button" id="zalando-normal">Request ATC + Fast</button> <button class="fast enable-button" id="zalando-fast">Fast</button> <button class="restock enable-button" id="zalando-restock">Restock (Precart)</button> <button class="manual enable-button" id="zalando-manual">Manual Cart</button>
+						<p style="font-size: 13px; color: #ea677d"><i class="fas fa-exclamation-circle" style="margin-right: .3em;"></i>Make sure to only have 1 option enabled!</p>
+					</div>
+
+					
+					<div class="payment">
+						<p>Payment</p>
+						<button class="card enable-button" id="zalando-card">Credit Card</button> <button class="paypal enable-button" id="zalando-paypal">Paypal</button> <button class="cod enable-button" id="zalando-cod">Cash on Delivery</button> <button class="later enable-button" id="zalando-later">CreditCard Pay later</button> <button class="pia enable-button" id="zalando-pia">Payment in Advance</button>
+
+
+
+					
+					</div>
+
+
+					<div class="size" style="color: #fff;">
+						<div class="multi-select" >
+							<label class="toggle-open" for="toggle-open">Select Size</label> <input id="toggle-open" type="checkbox">
+
+							<ul class="multi-select-options" id="zalando-size-dropdown">
+								<li><label><input data-state="35.5" name="sizes" type="checkbox" value="random"><span>Random</span></label>
+								</li>
+								<li><label><input data-state="35.5" name="sizes" type="checkbox" value="35.5"><span>35.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="35 2/3" name="sizes" type="checkbox" value="35 2/3"><span>35 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="36" name="sizes" type="checkbox" value="36"><span>36</span></label>
+								</li>
+
+
+								<li><label><input data-state="36.5" name="sizes" type="checkbox" value="36.5"><span>36.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="37.5" name="sizes" type="checkbox" value="37.5"><span>37.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="37 1/3" name="sizes" type="checkbox" value="37 1/3"><span>37 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="38" name="sizes" type="checkbox" value="38"><span>38</span></label>
+								</li>
+
+
+								<li><label><input data-state="38.5" name="sizes" type="checkbox" value="38.5"><span>38.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="38 2/3" name="sizes" type="checkbox" value="38 2/3"><span>38 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="39" name="sizes" type="checkbox" value="39"><span>39</span></label>
+								</li>
+
+
+								<li><label><input data-state="39 1/3" name="sizes" type="checkbox" value="39 1/3"><span>39 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="40" name="sizes" type="checkbox" value="40"><span>40</span></label>
+								</li>
+
+
+								<li><label><input data-state="40.5" name="sizes" type="checkbox" value="40.5"><span>40.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="40 2/3" name="sizes" type="checkbox" value="40 2/3"><span>40 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="41" name="sizes" type="checkbox" value="41"><span>41</span></label>
+								</li>
+
+
+								<li><label><input data-state="42" name="sizes" type="checkbox" value="42"><span>42</span></label>
+								</li>
+
+
+								<li><label><input data-state="42.5" name="sizes" type="checkbox" value="42.5"><span>42.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="42 2/3" name="sizes" type="checkbox" value="42 2/3"><span>42 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="43" name="sizes" type="checkbox" value="43"><span>43</span></label>
+								</li>
+
+
+								<li><label><input data-state="43 1/3" name="sizes" type="checkbox" value="43 1/3"><span>43 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="44" name="sizes" type="checkbox" value="44"><span>44</span></label>
+								</li>
+
+
+								<li><label><input data-state="44.5" name="sizes" type="checkbox" value="44.5"><span>44.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="44 2/3" name="sizes" type="checkbox" value="44 2/3"><span>44 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="45" name="sizes" type="checkbox" value="45"><span>45</span></label>
+								</li>
+
+
+								<li><label><input data-state="45.5" name="sizes" type="checkbox" value="45.5"><span>45.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="45 1/3" name="sizes" type="checkbox" value="45 1/3"><span>45 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="46" name="sizes" type="checkbox" value="46"><span>46</span></label>
+								</li>
+
+
+								<li><label><input data-state="47.5" name="sizes" type="checkbox" value="47.5"><span>47.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="47 1/3" name="sizes" type="checkbox" value="47 1/3"><span>47 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="48" name="sizes" type="checkbox" value="48"><span>48</span></label>
+								</li>
+
+
+								<li><label><input data-state="48.5" name="sizes" type="checkbox" value="48.5"><span>48.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="49.5" name="sizes" type="checkbox" value="49.5"><span>49.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="49 1/3" name="sizes" type="checkbox" value="49 1/3"><span>49 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="50.5" name="sizes" type="checkbox" value="50.5"><span>50.5</span></label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<style>
+						.vl {
+							border-top: 5px solid #2ce98e;
+							border-radius: 7px;
+							width: 97%;
+							display: block;
+							margin-left: auto;
+							margin-right: auto ;
+						}
+						</style>
+						
+					<div class="vl" style="margin-top: -29px;"></div>
+					<div class="account" >
+						<p>Masscart mode & Custom Task timer (leave empty if you are not using it)</p>
+						<button class="fast enable-button" id="zalando-cart-limit">Max. 1000 €</button> 
+						<input id="zalando-custom-timer" placeholder="09:15:45" style="width: 52px;" type="text"> 
+						<disabled input id="zalando-fast-link" placeholder="link" style="width: 487px;" type="text"> 
+					</div>
+					<div class="account">
+					
+					
+						<p>Preload PID</p>
+						<input id="zalando-preload-region" placeholder="region" style="width: 50px;" type="text"> 
+						<hidden input id="zalando-payment" placeholder="Enter payment option" style="width: 160px;" type="text"> 
+						<input class="options-right-pid" id="zalando-preload-payment" placeholder="Preload-Payment" style="width: 160px;" type="text"> 
+						<input class="options-right-pid" id="zalando-preload-pid" placeholder="Preload-PID" style="width: 160px;" type="text"> 
+						<button class="request enable-button" id="zalando-preload-start">Start Preload</button>
+						
+						<button class="" id="zalando-preload-task-status">Idle</button>
+					
+						
+
+					</div>
+					<div class="account">
+					
+					
+						<p>Custom Task</p>
+						<input id="zalando-region" placeholder="region" style="width: 50px;" type="text"> 
+						<hidden input id="zalando-payment" placeholder="Enter payment option" style="width: 160px;" type="text"> 
+						<input class="options-right-pid" id="zalando-pid" placeholder="Size-PID" style="width: 160px;" type="text"> 
+						<button style="font-size: 13px; color: #2ce98e"class="request enable-button" id="zalando-task-pid">Start</button>
+						<button class="" style="font-size: 13px; color: #ea677d" id="zalando-task-stop">Stop</button>
+						<button class="" id="zalando-task-status">Idle</button>
+						<p style="font-size: 13px; color: #ea677d"><i class="fas fa-exclamation-circle" style="margin-right: .3em;"></i>Make sure to do a fake checkout before!</p>
+					
+					</div>
+
+				</div>
+
+
+				<div class="solebox-right" id="solebox-content">
+					<p style="margin: 1em 0 1em 1em; color: #fff;">Solebox</p>
+					
+
+					<div class="default">
+					
+						<button class="enable-button" id="solebox-enable">Enable Solebox</button>
+						<button class="enable save" id="savebutton">Save</button>
+					</div>
+
+
+					<div class="account">
+						<p>Account</p>
+						<input placeholder="Account email" id="solebox-mail" type="text"> <input placeholder="Account password" id="solebox-password" type="text"> <button class="request enable-button" id="solebox-request-login">Autologin</button>
+					</div>
+
+
+					<div class="mode">
+						<p>Mode</p>
+						<button class="request enable-button" id="solebox-request">Request</button> <button class="request-m enable-button" id="solebox-request-manual">Request (Manual Cart)</button> <button class="request-mp enable-button" id="solebox-request-precart">Request (Manual Precart)</button> <button class="request-mp enable-button" id="solebox-hybrid">Hybrid (Human)</button>
+					</div>
+
+					<div class="account">
+						<p>Custom PID mode</p>
+						<input id="solebox-custom-pid" placeholder="Enter general PID" type="text">
+						<p style="font-size: 13px; color: #ea677d"><i class="fas fa-exclamation-circle" style="margin-right: .3em;"></i>Leave this field empty if you don't want to use it!</p>
+					</div>
+
+				
+
+
+	
+
+					<div class="size" style="color: #fff;">
+						<div class="multi-select-solebox">
+							<label class="toggle-open-solebox" for="toggle-open-solebox">Select Size</label> <input id="toggle-open-solebox" type="checkbox">
+
+							<ul class="multi-select-options-solebox" id="solebox-size-dropdown">
+								<li><label><input data-state="random" name="sizes" type="checkbox" value="random"><span>Random</span></label>
+								</li>
+
+
+								<li><label><input data-state="35.5" name="sizes" type="checkbox" value="35.5"><span>35.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="35 2/3" name="sizes" type="checkbox" value="35 2/3"><span>35 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="36" name="sizes" type="checkbox" value="36"><span>36</span></label>
+								</li>
+
+
+								<li><label><input data-state="36.5" name="sizes" type="checkbox" value="36.5"><span>36.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="37.5" name="sizes" type="checkbox" value="37.5"><span>37.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="37 1/3" name="sizes" type="checkbox" value="37 1/3"><span>37 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="38" name="sizes" type="checkbox" value="38"><span>38</span></label>
+								</li>
+
+
+								<li><label><input data-state="38.5" name="sizes" type="checkbox" value="38.5"><span>38.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="38 2/3" name="sizes" type="checkbox" value="38 2/3"><span>38 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="39" name="sizes" type="checkbox" value="39"><span>39</span></label>
+								</li>
+
+
+								<li><label><input data-state="39 1/3" name="sizes" type="checkbox" value="39 1/3"><span>39 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="40" name="sizes" type="checkbox" value="40"><span>40</span></label>
+								</li>
+
+
+								<li><label><input data-state="40.5" name="sizes" type="checkbox" value="40.5"><span>40.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="40 2/3" name="sizes" type="checkbox" value="40 2/3"><span>40 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="41" name="sizes" type="checkbox" value="41"><span>41</span></label>
+								</li>
+
+
+								<li><label><input data-state="42" name="sizes" type="checkbox" value="42"><span>42</span></label>
+								</li>
+
+
+								<li><label><input data-state="42.5" name="sizes" type="checkbox" value="42.5"><span>42.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="42 2/3" name="sizes" type="checkbox" value="42 2/3"><span>42 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="43" name="sizes" type="checkbox" value="43"><span>43</span></label>
+								</li>
+
+
+								<li><label><input data-state="43 1/3" name="sizes" type="checkbox" value="43 1/3"><span>43 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="44" name="sizes" type="checkbox" value="44"><span>44</span></label>
+								</li>
+
+
+								<li><label><input data-state="44.5" name="sizes" type="checkbox" value="44.5"><span>44.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="44 2/3" name="sizes" type="checkbox" value="44 2/3"><span>44 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="45" name="sizes" type="checkbox" value="45"><span>45</span></label>
+								</li>
+
+
+								<li><label><input data-state="45.5" name="sizes" type="checkbox" value="45.5"><span>45.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="45 1/3" name="sizes" type="checkbox" value="45 1/3"><span>45 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="46" name="sizes" type="checkbox" value="46"><span>46</span></label>
+								</li>
+
+
+								<li><label><input data-state="47.5" name="sizes" type="checkbox" value="47.5"><span>47.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="47 1/3" name="sizes" type="checkbox" value="47 1/3"><span>47 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="48" name="sizes" type="checkbox" value="48"><span>48</span></label>
+								</li>
+
+
+								<li><label><input data-state="48.5" name="sizes" type="checkbox" value="48.5"><span>48.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="49.5" name="sizes" type="checkbox" value="49.5"><span>49.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="49 1/3" name="sizes" type="checkbox" value="49 1/3"><span>49 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="50.5" name="sizes" type="checkbox" value="50.5"><span>50.5</span></label>
+								</li>
+							</ul>
+						</div>
+					</div>
+				
+				</div>
+
+
+
+				<div class="snipes-right" id="snipes-content">
+					<p style="margin: 1em 0 1em 1em; color: #fff;">Snipes</p>
+					
+
+					<div class="default">
+					
+						<button class="enable-button" id="snipes-enable">Enable Snipes</button>
+						<button class="enable save" id="savebutton">Save</button>
+					</div>
+
+
+					<div class="account">
+						<p>Account</p>
+						<input id="snipes-mail" placeholder="Account email" type="text"> <input id="snipes-password" placeholder="Account password" type="text"> <button class="request enable-button" id="snipes-request-login">Autologin</button>
+					</div>
+
+
+					<div class="mode">
+						<p>Mode</p>
+						<button class="request enable-button" id="snipes-request">Request</button> <button class="request-m enable-button" id="snipes-request-manual">Request (Manual Cart)</button> <button class="request-m enable-button" id="snipes-precart-manual">Request Precart (Manual Cart)</button><button class="request-m enable-button" id="snipes-hybrid">Hybrid (Human)</button>
+					</div>
+
+					<div class="account">
+						<p>Custom PID mode</p>
+						<input id="snipes-custom-pid" placeholder="Enter general PID" type="text">
+						<p style="font-size: 13px; color: #ea677d"><i class="fas fa-exclamation-circle" style="margin-right: .3em;"></i>Leave this field empty if you don't want to use it!</p>
+					</div>
+					
+
+					<div class="account">
+						<p>Add to Wishlist</p>
+						<input id="snipes-wishlist-pid" placeholder="00252210001, DE" type="text">
+					</div>
+					
+					<div class="size">
+						<div class="multi-select-snipes">
+							<label class="toggle-open-snipes" for="toggle-open-snipes">Select Size</label> <input id="toggle-open-snipes" type="checkbox">
+
+							<ul class="multi-select-options-snipes" id="snipes-size-dropdown">
+								<li><label><input data-state="random" name="sizes" type="checkbox" value="random"><span>Random</span></label>
+								</li>
+
+
+
+								<li><label><input data-state="35.5" name="sizes" type="checkbox" value="35.5"><span>35.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="35 2/3" name="sizes" type="checkbox" value="35 2/3"><span>35 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="36" name="sizes" type="checkbox" value="36"><span>36</span></label>
+								</li>
+
+
+								<li><label><input data-state="36.5" name="sizes" type="checkbox" value="36.5"><span>36.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="37.5" name="sizes" type="checkbox" value="37.5"><span>37.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="37 1/3" name="sizes" type="checkbox" value="37 1/3"><span>37 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="38" name="sizes" type="checkbox" value="38"><span>38</span></label>
+								</li>
+
+
+								<li><label><input data-state="38.5" name="sizes" type="checkbox" value="38.5"><span>38.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="38 2/3" name="sizes" type="checkbox" value="38 2/3"><span>38 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="39" name="sizes" type="checkbox" value="39"><span>39</span></label>
+								</li>
+
+
+								<li><label><input data-state="39 1/3" name="sizes" type="checkbox" value="39 1/3"><span>39 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="40" name="sizes" type="checkbox" value="40"><span>40</span></label>
+								</li>
+
+
+								<li><label><input data-state="40.5" name="sizes" type="checkbox" value="40.5"><span>40.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="40 2/3" name="sizes" type="checkbox" value="40 2/3"><span>40 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="41" name="sizes" type="checkbox" value="41"><span>41</span></label>
+								</li>
+
+
+								<li><label><input data-state="42" name="sizes" type="checkbox" value="42"><span>42</span></label>
+								</li>
+
+
+								<li><label><input data-state="42.5" name="sizes" type="checkbox" value="42.5"><span>42.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="42 2/3" name="sizes" type="checkbox" value="42 2/3"><span>42 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="43" name="sizes" type="checkbox" value="43"><span>43</span></label>
+								</li>
+
+
+								<li><label><input data-state="43 1/3" name="sizes" type="checkbox" value="43 1/3"><span>43 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="44" name="sizes" type="checkbox" value="44"><span>44</span></label>
+								</li>
+
+
+								<li><label><input data-state="44.5" name="sizes" type="checkbox" value="44.5"><span>44.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="44 2/3" name="sizes" type="checkbox" value="44 2/3"><span>44 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="45" name="sizes" type="checkbox" value="45"><span>45</span></label>
+								</li>
+
+
+								<li><label><input data-state="45.5" name="sizes" type="checkbox" value="45.5"><span>45.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="45 1/3" name="sizes" type="checkbox" value="45 1/3"><span>45 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="46" name="sizes" type="checkbox" value="46"><span>46</span></label>
+								</li>
+
+
+								<li><label><input data-state="47.5" name="sizes" type="checkbox" value="47.5"><span>47.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="47 1/3" name="sizes" type="checkbox" value="47 1/3"><span>47 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="48" name="sizes" type="checkbox" value="48"><span>48</span></label>
+								</li>
+
+
+								<li><label><input data-state="48.5" name="sizes" type="checkbox" value="48.5"><span>48.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="49.5" name="sizes" type="checkbox" value="49.5"><span>49.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="49 1/3" name="sizes" type="checkbox" value="49 1/3"><span>49 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="50.5" name="sizes" type="checkbox" value="50.5"><span>50.5</span></label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+					
+				</div>
+
+
+				<div class="onygo-right" id="onygo-content">
+					<p style="margin: 1em 0 1em 1em; color: #fff;">Onygo</p>
+
+
+					<div class="default">
+					
+						<button class="enable-button" id="onygo-enable">Enable Onygo</button>
+						<button class="enable save" id="savebutton">Save</button>
+					</div>
+
+
+					<div class="account">
+						<p>Account</p>
+						<input placeholder="Account email" id="onygo-mail" type="text"> <input placeholder="Account password" id="onygo-password" type="text"> <button class="request enable-button" id="onygo-request-login">Auto Login</button> 
+					</div>
+
+
+					<div class="mode">
+						<p>Mode</p>
+						<button class="request enable-button" id="onygo-request">Request</button> <button class="request-m enable-button" id="onygo-request-manual">Request (Manual Cart)</button>
+					</div>
+					<div class="account">
+						<p>Add to Wishlist</p>
+						<input id="onygo-wishlist-pid" placeholder="00252210001" type="text">
+					</div>
+					
+
+					
+					<div class="size">
+						<div class="multi-select-onygo">
+							<label class="toggle-open-onygo" for="toggle-open-onygo">Select Size</label> <input id="toggle-open-onygo" type="checkbox">
+
+							<ul class="multi-select-options-onygo" id="onygo-size-dropdown">
+								<li><label><input data-state="Random" name="sizes" type="checkbox" value="Random"><span>Random</span></label>
+								</li>
+
+
+								<li><label><input data-state="35.5" name="sizes" type="checkbox" value="35.5"><span>35.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="35 2/3" name="sizes" type="checkbox" value="35 2/3"><span>35 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="36" name="sizes" type="checkbox" value="36"><span>36</span></label>
+								</li>
+
+
+								<li><label><input data-state="36.5" name="sizes" type="checkbox" value="36.5"><span>36.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="37.5" name="sizes" type="checkbox" value="37.5"><span>37.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="37 1/3" name="sizes" type="checkbox" value="37 1/3"><span>37 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="38" name="sizes" type="checkbox" value="38"><span>38</span></label>
+								</li>
+
+
+								<li><label><input data-state="38.5" name="sizes" type="checkbox" value="38.5"><span>38.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="38 2/3" name="sizes" type="checkbox" value="38 2/3"><span>38 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="39" name="sizes" type="checkbox" value="39"><span>39</span></label>
+								</li>
+
+
+								<li><label><input data-state="39 1/3" name="sizes" type="checkbox" value="39 1/3"><span>39 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="40" name="sizes" type="checkbox" value="40"><span>40</span></label>
+								</li>
+
+
+								<li><label><input data-state="40.5" name="sizes" type="checkbox" value="40.5"><span>40.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="40 2/3" name="sizes" type="checkbox" value="40 2/3"><span>40 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="41" name="sizes" type="checkbox" value="41"><span>41</span></label>
+								</li>
+
+
+								<li><label><input data-state="42" name="sizes" type="checkbox" value="42"><span>42</span></label>
+								</li>
+
+
+								<li><label><input data-state="42.5" name="sizes" type="checkbox" value="42.5"><span>42.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="42 2/3" name="sizes" type="checkbox" value="42 2/3"><span>42 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="43" name="sizes" type="checkbox" value="43"><span>43</span></label>
+								</li>
+
+
+								<li><label><input data-state="43 1/3" name="sizes" type="checkbox" value="43 1/3"><span>43 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="44" name="sizes" type="checkbox" value="44"><span>44</span></label>
+								</li>
+
+
+								<li><label><input data-state="44.5" name="sizes" type="checkbox" value="44.5"><span>44.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="44 2/3" name="sizes" type="checkbox" value="44 2/3"><span>44 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="45" name="sizes" type="checkbox" value="45"><span>45</span></label>
+								</li>
+
+
+								<li><label><input data-state="45.5" name="sizes" type="checkbox" value="45.5"><span>45.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="45 1/3" name="sizes" type="checkbox" value="45 1/3"><span>45 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="46" name="sizes" type="checkbox" value="46"><span>46</span></label>
+								</li>
+
+
+								<li><label><input data-state="47.5" name="sizes" type="checkbox" value="47.5"><span>47.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="47 1/3" name="sizes" type="checkbox" value="47 1/3"><span>47 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="48" name="sizes" type="checkbox" value="48"><span>48</span></label>
+								</li>
+
+
+								<li><label><input data-state="48.5" name="sizes" type="checkbox" value="48.5"><span>48.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="49.5" name="sizes" type="checkbox" value="49.5"><span>49.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="49 1/3" name="sizes" type="checkbox" value="49 1/3"><span>49 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="50.5" name="sizes" type="checkbox" value="50.5"><span>50.5</span></label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+
+
+				<div class="sns-right" id="sns-content">
+					<p style="margin: 1em 0 1em 1em; color: #fff;">SNS</p>
+
+
+					<div class="default">
+					
+						<button class="enable-button" id="sns-enable">Enable SNS</button>
+						<button class="enable save" id="savebutton">Save</button>
+					</div>
+
+
+					<div class="mode">
+						<p>Mode</p>
+						<button class="drop enable-button" id="sns-autocart">Auto Cart</button> <button class="restock enable-button" id="sns-restock">Restock Mode</button>
+					</div>
+
+
+					<div class="size">
+						<div class="multi-select-sns">
+							<label class="toggle-open-sns" for="toggle-open-sns">Select Size</label> <input id="toggle-open-sns" type="checkbox">
+
+							<ul class="multi-select-options-sns" id ="sns-size-dropdown">
+								<li><label><input data-state="random" name="sizes" type="checkbox" value="random"><span>Random</span></label>
+								</li>
+								<li><label><input data-state="35.5" name="sizes" type="checkbox" value="35.5"><span>35.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="35 2/3" name="sizes" type="checkbox" value="35 2/3"><span>35 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="36" name="sizes" type="checkbox" value="36"><span>36</span></label>
+								</li>
+
+
+								<li><label><input data-state="36.5" name="sizes" type="checkbox" value="36.5"><span>36.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="37.5" name="sizes" type="checkbox" value="37.5"><span>37.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="37 1/3" name="sizes" type="checkbox" value="37 1/3"><span>37 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="38" name="sizes" type="checkbox" value="38"><span>38</span></label>
+								</li>
+
+
+								<li><label><input data-state="38.5" name="sizes" type="checkbox" value="38.5"><span>38.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="38 2/3" name="sizes" type="checkbox" value="38 2/3"><span>38 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="39" name="sizes" type="checkbox" value="39"><span>39</span></label>
+								</li>
+
+
+								<li><label><input data-state="39 1/3" name="sizes" type="checkbox" value="39 1/3"><span>39 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="40" name="sizes" type="checkbox" value="40"><span>40</span></label>
+								</li>
+
+
+								<li><label><input data-state="40.5" name="sizes" type="checkbox" value="40.5"><span>40.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="40 2/3" name="sizes" type="checkbox" value="40 2/3"><span>40 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="41" name="sizes" type="checkbox" value="41"><span>41</span></label>
+								</li>
+
+
+								<li><label><input data-state="42" name="sizes" type="checkbox" value="42"><span>42</span></label>
+								</li>
+
+
+								<li><label><input data-state="42.5" name="sizes" type="checkbox" value="42.5"><span>42.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="42 2/3" name="sizes" type="checkbox" value="42 2/3"><span>42 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="43" name="sizes" type="checkbox" value="43"><span>43</span></label>
+								</li>
+
+
+								<li><label><input data-state="43 1/3" name="sizes" type="checkbox" value="43 1/3"><span>43 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="44" name="sizes" type="checkbox" value="44"><span>44</span></label>
+								</li>
+
+
+								<li><label><input data-state="44.5" name="sizes" type="checkbox" value="44.5"><span>44.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="44 2/3" name="sizes" type="checkbox" value="44 2/3"><span>44 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="45" name="sizes" type="checkbox" value="45"><span>45</span></label>
+								</li>
+
+
+								<li><label><input data-state="45.5" name="sizes" type="checkbox" value="45.5"><span>45.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="45 1/3" name="sizes" type="checkbox" value="45 1/3"><span>45 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="46" name="sizes" type="checkbox" value="46"><span>46</span></label>
+								</li>
+
+
+								<li><label><input data-state="47.5" name="sizes" type="checkbox" value="47.5"><span>47.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="47 1/3" name="sizes" type="checkbox" value="47 1/3"><span>47 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="48" name="sizes" type="checkbox" value="48"><span>48</span></label>
+								</li>
+
+
+								<li><label><input data-state="48.5" name="sizes" type="checkbox" value="48.5"><span>48.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="49.5" name="sizes" type="checkbox" value="49.5"><span>49.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="49 1/3" name="sizes" type="checkbox" value="49 1/3"><span>49 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="50.5" name="sizes" type="checkbox" value="50.5"><span>50.5</span></label>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="naked-right" id="naked-content">
+					<p style="margin: 1em 0 1em 1em; color: #fff;">Naked</p>
+
+
+					<div class="default">
+					
+						<button class="enable-button" id="naked-enable">Enable Naked</button>
+						<button class="enable save" id="savebutton">Save</button>
+					</div>
+
+
+					<div class="mode">
+						<p>Mode</p>
+						<button class="autocart enable-button" id="naked-autocart">Auto Cart</button>
+						<button class="autocart enable-button" id="naked-restock">Restock Mode</button>
+					</div>
+
+
+					<div class="size">
+						<div class="multi-select-naked">
+							<label class="toggle-open-naked" for="toggle-open-naked">Select Size</label> <input id="toggle-open-naked" type="checkbox">
+
+							<ul class="multi-select-options-naked" id ="naked-size-dropdown">
+								<li><label><input data-state="random" name="sizes" type="checkbox" value="random"><span>Random</span></label>
+								</li>
+
+								<li><label><input data-state="35.5" name="sizes" type="checkbox" value="35,5"><span>35.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="35 2/3" name="sizes" type="checkbox" value="35 2/3"><span>35 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="36" name="sizes" type="checkbox" value="36"><span>36</span></label>
+								</li>
+
+
+								<li><label><input data-state="36.5" name="sizes" type="checkbox" value="36,5"><span>36.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="37.5" name="sizes" type="checkbox" value="37,5"><span>37.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="37 1/3" name="sizes" type="checkbox" value="37 1/3"><span>37 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="38" name="sizes" type="checkbox" value="38"><span>38</span></label>
+								</li>
+
+
+								<li><label><input data-state="38.5" name="sizes" type="checkbox" value="38,5"><span>38.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="38 2/3" name="sizes" type="checkbox" value="38 2/3"><span>38 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="39" name="sizes" type="checkbox" value="39"><span>39</span></label>
+								</li>
+
+
+								<li><label><input data-state="39 1/3" name="sizes" type="checkbox" value="39 1/3"><span>39 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="40" name="sizes" type="checkbox" value="40"><span>40</span></label>
+								</li>
+
+
+								<li><label><input data-state="40.5" name="sizes" type="checkbox" value="40,5"><span>40.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="40 2/3" name="sizes" type="checkbox" value="40 2/3"><span>40 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="41" name="sizes" type="checkbox" value="41"><span>41</span></label>
+								</li>
+
+
+								<li><label><input data-state="42" name="sizes" type="checkbox" value="42"><span>42</span></label>
+								</li>
+
+
+								<li><label><input data-state="42.5" name="sizes" type="checkbox" value="42,5"><span>42.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="42 2/3" name="sizes" type="checkbox" value="42 2/3"><span>42 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="43" name="sizes" type="checkbox" value="43"><span>43</span></label>
+								</li>
+
+
+								<li><label><input data-state="43 1/3" name="sizes" type="checkbox" value="43 1/3"><span>43 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="44" name="sizes" type="checkbox" value="44"><span>44</span></label>
+								</li>
+
+
+								<li><label><input data-state="44.5" name="sizes" type="checkbox" value="44,5"><span>44.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="44 2/3" name="sizes" type="checkbox" value="44 2/3"><span>44 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="45" name="sizes" type="checkbox" value="45"><span>45</span></label>
+								</li>
+
+
+								<li><label><input data-state="45.5" name="sizes" type="checkbox" value="45,5"><span>45.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="45 1/3" name="sizes" type="checkbox" value="45 1/3"><span>45 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="46" name="sizes" type="checkbox" value="46"><span>46</span></label>
+								</li>
+
+
+								<li><label><input data-state="47.5" name="sizes" type="checkbox" value="47,5"><span>47.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="47 1/3" name="sizes" type="checkbox" value="47 1/3"><span>47 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="48" name="sizes" type="checkbox" value="48"><span>48</span></label>
+								</li>
+
+
+								<li><label><input data-state="48.5" name="sizes" type="checkbox" value="48,5"><span>48.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="49.5" name="sizes" type="checkbox" value="49,5"><span>49.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="49 1/3" name="sizes" type="checkbox" value="49 1/3"><span>49 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="50.5" name="sizes" type="checkbox" value="50,5"><span>50.5</span></label>
+								</li>
+							</ul>
+							
+						</div>
+						
+					</div>
+					
+				</div>
+
+
+				<div class="os-right" id="os-content">
+					<p style="margin: 1em 0 1em 1em; color: #fff;">Offspring</p>
+
+
+					<div class="default">
+					
+						<button class="enable-button" id="offspring-enable">Enable Offspring</button>
+						<button class="enable save" id="savebutton">Save</button>
+					</div>
+
+
+					<div class="mode">
+						<p>Mode</p>
+						<button class="autocart enable-button" id="offspring-autocart">Auto Cart</button> <button class="autocart-r enable-button" id="offspring-restock">Restock</button>
+					</div>
+
+
+					<div class="payment">
+						<p>Payment</p>
+						<button class="card enable-button" id="card">Credit Card</button> <button class="paypal enable-button" id="paypal">Paypal</button>
+					</div>
+
+					<div class="account">
+						<p>Account</p>
+						<input id="offspring-mail" placeholder="Account email" type="text"> <input id="offspring-password" placeholder="Account password" type="text"> <button class="request enable-button" id="offspring-request-login">Autologin</button>
+					</div>
+
+
+					<div class="size">
+						<div class="multi-select-os">
+							<label class="toggle-open-os" for="toggle-open-os">Select Size</label> <input id="toggle-open-os" type="checkbox">
+
+							<ul class="multi-select-options-os" id ="os-size-dropdown">
+								<li><label><input data-sv tate="random" name="sizes" type="checkbox" value="random"><span>Random</span></label>
+								</li>
+
+								
+								<li><label><input data-sv tate="3" name="sizes" type="checkbox" value="3"><span>3</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="3.5" name="sizes" type="checkbox" value="3.5"><span>3.5</span></label>
+								</li>
+
+								
+								<li><label><input data-sv tate="4" name="sizes" type="checkbox" value="4"><span>4</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="4.5" name="sizes" type="checkbox" value="4.5"><span>4.5</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="5" name="sizes" type="checkbox" value="5"><span>5</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="5.5" name="sizes" type="checkbox" value="5.5"><span>5.5</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="6" name="sizes" type="checkbox" value="6"><span>6</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="6.5" name="sizes" type="checkbox" value="6.5"><span>6.5</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="7" name="sizes" type="checkbox" value="7"><span>7</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="7.5" name="sizes" type="checkbox" value="7.5"><span>7.5</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="8" name="sizes" type="checkbox" value="8"><span>8</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="8.5" name="sizes" type="checkbox" value="8.5"><span>8.5</span></label>
+								</li>
+
+								
+								<li><label><input data-sv tate="9" name="sizes" type="checkbox" value="9"><span>9</span></label>
+								</li>
+
+								
+								<li><label><input data-sv tate="9.5" name="sizes" type="checkbox" value="9.5"><span>9.5</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="10" name="sizes" type="checkbox" value="10"><span>10</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="10.5" name="sizes" type="checkbox" value="10.5"><span>10.5</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="11" name="sizes" type="checkbox" value="11"><span>11</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="11.5" name="sizes" type="checkbox" value="11.5"><span>11.5</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="12" name="sizes" type="checkbox" value="12"><span>12</span></label>
+								</li>
+
+
+							
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="footdistrict-right" id="footdistrict-content">
+					<p style="margin: 1em 0 1em 1em; color: #fff;">Footdistrict (disabled)</p>
+
+
+					<div class="default">
+					
+						<button class="enable-button" id="footdistrict-enable">Enable Footdistrict</button>
+						<button class="enable save" id="savebutton">Save</button>
+					</div>
+
+
+					<div class="mode">
+						<p>Mode</p>
+						<button class="autocart-r enable-button" id="footdistrict-autocart">Auto Cart (+ Refresh)</button> <button class="autocart enable-button" id="footdistrict-checkout">Checkout</button>
+					</div>
+
+
+
+					<div class="size">
+						<div class="multi-select-footdistrict">
+							<label class="toggle-open-footdistrict" for="toggle-open-footdistrict">Select Size</label> <input id="toggle-open-footdistrict" type="checkbox">
+
+							<ul class="multi-select-options-footdistrict" id ="footdistrict-size-dropdown">
+								<li><label><input data-state="random" name="sizes" type="checkbox" value="random"><span>Random</span></label>
+								</li>
+
+
+								<li><label><input data-state="35.5" name="sizes" type="checkbox" value="35.5"><span>35.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="35 2/3" name="sizes" type="checkbox" value="35 2/3"><span>35 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="36" name="sizes" type="checkbox" value="36"><span>36</span></label>
+								</li>
+
+
+								<li><label><input data-state="36.5" name="sizes" type="checkbox" value="36.5"><span>36.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="37.5" name="sizes" type="checkbox" value="37.5"><span>37.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="37 1/3" name="sizes" type="checkbox" value="37 1/3"><span>37 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="38" name="sizes" type="checkbox" value="38"><span>38</span></label>
+								</li>
+
+
+								<li><label><input data-state="38.5" name="sizes" type="checkbox" value="38.5"><span>38.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="38 2/3" name="sizes" type="checkbox" value="38 2/3"><span>38 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="39" name="sizes" type="checkbox" value="39"><span>39</span></label>
+								</li>
+
+
+								<li><label><input data-state="39 1/3" name="sizes" type="checkbox" value="39 1/3"><span>39 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="40" name="sizes" type="checkbox" value="40"><span>40</span></label>
+								</li>
+
+
+								<li><label><input data-state="40.5" name="sizes" type="checkbox" value="40.5"><span>40.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="40 2/3" name="sizes" type="checkbox" value="40 2/3"><span>40 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="41" name="sizes" type="checkbox" value="41"><span>41</span></label>
+								</li>
+
+
+								<li><label><input data-state="42" name="sizes" type="checkbox" value="42"><span>42</span></label>
+								</li>
+
+
+								<li><label><input data-state="42.5" name="sizes" type="checkbox" value="42.5"><span>42.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="42 2/3" name="sizes" type="checkbox" value="42 2/3"><span>42 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="43" name="sizes" type="checkbox" value="43"><span>43</span></label>
+								</li>
+
+
+								<li><label><input data-state="43 1/3" name="sizes" type="checkbox" value="43 1/3"><span>43 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="44" name="sizes" type="checkbox" value="44"><span>44</span></label>
+								</li>
+
+
+								<li><label><input data-state="44.5" name="sizes" type="checkbox" value="44.5"><span>44.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="44 2/3" name="sizes" type="checkbox" value="44 2/3"><span>44 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="45" name="sizes" type="checkbox" value="45"><span>45</span></label>
+								</li>
+
+
+								<li><label><input data-state="45.5" name="sizes" type="checkbox" value="45.5"><span>45.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="45 1/3" name="sizes" type="checkbox" value="45 1/3"><span>45 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="46" name="sizes" type="checkbox" value="46"><span>46</span></label>
+								</li>
+
+
+								<li><label><input data-state="47.5" name="sizes" type="checkbox" value="47.5"><span>47.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="47 1/3" name="sizes" type="checkbox" value="47 1/3"><span>47 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="48" name="sizes" type="checkbox" value="48"><span>48</span></label>
+								</li>
+
+
+								<li><label><input data-state="48.5" name="sizes" type="checkbox" value="48.5"><span>48.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="49.5" name="sizes" type="checkbox" value="49.5"><span>49.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="49 1/3" name="sizes" type="checkbox" value="49 1/3"><span>49 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="50.5" name="sizes" type="checkbox" value="50.5"><span>50.5</span></label>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="b4b-right" id="b4b-content">
+					<p style="margin: 1em 0 1em 1em; color: #fff;">Basked4Ballers</p>
+
+
+					<div class="default">
+						
+						<button class="enable-button" id="b4b-enable">Enable Basked4Ballers</button>
+						<button class="enable save" id="savebutton">Save</button>
+					</div>
+
+
+					<div class="mode">
+						<p>Mode</p>
+						<button class="autocart-r enable-button" id="b4b-autocart">Auto Cart</button> <button class="autocart enable-button" id="b4b-restock">Restock</button>
+					</div>
+
+
+					
+
+
+					<div class="size">
+						<div class="multi-select-b4b">
+							<label class="toggle-open-b4b" for="toggle-open-b4b">Select Size</label> <input id="toggle-open-b4b" type="checkbox">
+
+							<ul class="multi-select-options-b4b" id="b4b-size-dropdown">
+								<li><label><input data-state="random" name="sizes" type="checkbox" value="random"><span>random</span></label>
+								</li>
+
+
+								<li><label><input data-state="35.5" name="sizes" type="checkbox" value="35.5"><span>35.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="35 2/3" name="sizes" type="checkbox" value="35 2/3"><span>35 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="36" name="sizes" type="checkbox" value="36"><span>36</span></label>
+								</li>
+
+
+								<li><label><input data-state="36.5" name="sizes" type="checkbox" value="36.5"><span>36.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="37.5" name="sizes" type="checkbox" value="37.5"><span>37.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="37 1/3" name="sizes" type="checkbox" value="37 1/3"><span>37 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="38" name="sizes" type="checkbox" value="38"><span>38</span></label>
+								</li>
+
+
+								<li><label><input data-state="38.5" name="sizes" type="checkbox" value="38.5"><span>38.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="38 2/3" name="sizes" type="checkbox" value="38 2/3"><span>38 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="39" name="sizes" type="checkbox" value="39"><span>39</span></label>
+								</li>
+
+
+								<li><label><input data-state="39 1/3" name="sizes" type="checkbox" value="39 1/3"><span>39 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="40" name="sizes" type="checkbox" value="40"><span>40</span></label>
+								</li>
+
+
+								<li><label><input data-state="40.5" name="sizes" type="checkbox" value="40.5"><span>40.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="40 2/3" name="sizes" type="checkbox" value="40 2/3"><span>40 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="41" name="sizes" type="checkbox" value="41"><span>41</span></label>
+								</li>
+
+
+								<li><label><input data-state="42" name="sizes" type="checkbox" value="42"><span>42</span></label>
+								</li>
+
+
+								<li><label><input data-state="42.5" name="sizes" type="checkbox" value="42.5"><span>42.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="42 2/3" name="sizes" type="checkbox" value="42 2/3"><span>42 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="43" name="sizes" type="checkbox" value="43"><span>43</span></label>
+								</li>
+
+
+								<li><label><input data-state="43 1/3" name="sizes" type="checkbox" value="43 1/3"><span>43 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="44" name="sizes" type="checkbox" value="44"><span>44</span></label>
+								</li>
+
+
+								<li><label><input data-state="44.5" name="sizes" type="checkbox" value="44.5"><span>44.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="44 2/3" name="sizes" type="checkbox" value="44 2/3"><span>44 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="45" name="sizes" type="checkbox" value="45"><span>45</span></label>
+								</li>
+
+
+								<li><label><input data-state="45.5" name="sizes" type="checkbox" value="45.5"><span>45.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="45 1/3" name="sizes" type="checkbox" value="45 1/3"><span>45 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="46" name="sizes" type="checkbox" value="46"><span>46</span></label>
+								</li>
+
+
+								<li><label><input data-state="47.5" name="sizes" type="checkbox" value="47.5"><span>47.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="47 1/3" name="sizes" type="checkbox" value="47 1/3"><span>47 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="48" name="sizes" type="checkbox" value="48"><span>48</span></label>
+								</li>
+
+
+								<li><label><input data-state="48.5" name="sizes" type="checkbox" value="48.5"><span>48.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="49.5" name="sizes" type="checkbox" value="49.5"><span>49.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="49 1/3" name="sizes" type="checkbox" value="49 1/3"><span>49 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="50.5" name="sizes" type="checkbox" value="50.5"><span>50.5</span></label>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="lvr-right" id="lvr-content">
+					<p style="margin: 1em 0 1em 1em; color: #fff;">LuisaViaRoma</p>
+
+
+					<div class="default">
+					
+						<button class="enable-button" id="lvr-enable">Enable LuisaViaRoma</button>
+						<button class="enable save" id="savebutton">Save</button>
+					</div>
+
+
+					<div class="mode">
+						<p>Mode</p>
+						<button class="autocart-r enable-button" id="lvr-request">Request</button> <button class="autocart enable-button" id="lvr-request-manual">Request (manual cart)</button>
+					</div>
+
+					<div class="account">
+						<p>Account</p>
+						<input id="lvr-mail" placeholder="Account email" type="text"> <input id="lvr-password" placeholder="Account password" type="text"> <button class="request enable-button" id="lvr-request-login">Autologin</button>
+					</div>
+
+
+
+					
+
+					<div class="size">
+						<div class="multi-select-lvr">
+							<label class="toggle-open-lvr" for="toggle-open-lvr">Select Size</label> <input id="toggle-open-lvr" type="checkbox">
+
+							<ul class="multi-select-options-lvr" id="lvr-size-dropdown">
+								
+								<li><label><input data-sv tate="3" name="sizes" type="checkbox" value="3"><span>3</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="3.5" name="sizes" type="checkbox" value="3.5"><span>3.5</span></label>
+								</li>
+
+								
+								<li><label><input data-sv tate="4" name="sizes" type="checkbox" value="4"><span>4</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="4.5" name="sizes" type="checkbox" value="4.5"><span>4.5</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="5" name="sizes" type="checkbox" value="5"><span>5</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="5.5" name="sizes" type="checkbox" value="5.5"><span>5.5</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="6" name="sizes" type="checkbox" value="6"><span>6</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="6.5" name="sizes" type="checkbox" value="6.5"><span>6.5</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="7" name="sizes" type="checkbox" value="7"><span>7</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="7.5" name="sizes" type="checkbox" value="7.5"><span>7.5</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="8" name="sizes" type="checkbox" value="8"><span>8</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="8.5" name="sizes" type="checkbox" value="8.5"><span>8.5</span></label>
+								</li>
+
+								
+								<li><label><input data-sv tate="9" name="sizes" type="checkbox" value="9"><span>9</span></label>
+								</li>
+
+								
+								<li><label><input data-sv tate="9.5" name="sizes" type="checkbox" value="9.5"><span>9.5</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="10" name="sizes" type="checkbox" value="10"><span>10</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="10.5" name="sizes" type="checkbox" value="10.5"><span>10.5</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="11" name="sizes" type="checkbox" value="11"><span>11</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="11.5" name="sizes" type="checkbox" value="11.5"><span>11.5</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="12" name="sizes" type="checkbox" value="12"><span>12</span></label>
+								</li>
+
+								<li><label><input data-state="35.5" name="sizes" type="checkbox" value="35.5"><span>35.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="35 2/3" name="sizes" type="checkbox" value="35 2/3"><span>35 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="36" name="sizes" type="checkbox" value="36"><span>36</span></label>
+								</li>
+
+
+								<li><label><input data-state="36.5" name="sizes" type="checkbox" value="36.5"><span>36.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="37.5" name="sizes" type="checkbox" value="37.5"><span>37.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="37 1/3" name="sizes" type="checkbox" value="37 1/3"><span>37 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="38" name="sizes" type="checkbox" value="38"><span>38</span></label>
+								</li>
+
+
+								<li><label><input data-state="38.5" name="sizes" type="checkbox" value="38.5"><span>38.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="38 2/3" name="sizes" type="checkbox" value="38 2/3"><span>38 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="39" name="sizes" type="checkbox" value="39"><span>39</span></label>
+								</li>
+
+
+								<li><label><input data-state="39 1/3" name="sizes" type="checkbox" value="39 1/3"><span>39 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="40" name="sizes" type="checkbox" value="40"><span>40</span></label>
+								</li>
+
+
+								<li><label><input data-state="40.5" name="sizes" type="checkbox" value="40.5"><span>40.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="40 2/3" name="sizes" type="checkbox" value="40 2/3"><span>40 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="41" name="sizes" type="checkbox" value="41"><span>41</span></label>
+								</li>
+
+
+								<li><label><input data-state="42" name="sizes" type="checkbox" value="42"><span>42</span></label>
+								</li>
+
+
+								<li><label><input data-state="42.5" name="sizes" type="checkbox" value="42.5"><span>42.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="42 2/3" name="sizes" type="checkbox" value="42 2/3"><span>42 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="43" name="sizes" type="checkbox" value="43"><span>43</span></label>
+								</li>
+
+
+								<li><label><input data-state="43 1/3" name="sizes" type="checkbox" value="43 1/3"><span>43 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="44" name="sizes" type="checkbox" value="44"><span>44</span></label>
+								</li>
+
+
+								<li><label><input data-state="44.5" name="sizes" type="checkbox" value="44.5"><span>44.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="44 2/3" name="sizes" type="checkbox" value="44 2/3"><span>44 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="45" name="sizes" type="checkbox" value="45"><span>45</span></label>
+								</li>
+
+
+								<li><label><input data-state="45.5" name="sizes" type="checkbox" value="45.5"><span>45.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="45 1/3" name="sizes" type="checkbox" value="45 1/3"><span>45 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="46" name="sizes" type="checkbox" value="46"><span>46</span></label>
+								</li>
+
+
+								<li><label><input data-state="47.5" name="sizes" type="checkbox" value="47.5"><span>47.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="47 1/3" name="sizes" type="checkbox" value="47 1/3"><span>47 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="48" name="sizes" type="checkbox" value="48"><span>48</span></label>
+								</li>
+
+
+								<li><label><input data-state="48.5" name="sizes" type="checkbox" value="48.5"><span>48.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="49.5" name="sizes" type="checkbox" value="49.5"><span>49.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="49 1/3" name="sizes" type="checkbox" value="49 1/3"><span>49 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="50.5" name="sizes" type="checkbox" value="50.5"><span>50.5</span></label>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="office-right" id="office-content">
+					<p style="margin: 1em 0 1em 1em; color: #fff;">Office</p>
+
+
+					<div class="default">
+					
+						<button class="enable-button" id="office-enable">Enable Office</button>
+						<button class="enable save" id="savebutton">Save</button>
+					</div>
+
+
+					<div class="mode">
+						<p>Mode</p>
+						<button class="autocart enable-button" id="office-autocart">Auto Cart</button> <button class="autocart-r enable-button" id="office-restock">Request Checkout</button>
+						<p style="font-size: 13px; color: #ea677d"><i class="fas fa-exclamation-circle" style="margin-right: .3em;"></i>You can use Request Checkout also in combination with a keybind! Make sure to be logged in</p>
+					</div>
+
+
+					<div class="payment">
+						<p>Payment</p>
+						<button class="card enable-button" id="card">Credit Card</button> <button class="paypal enable-button" id="paypal">Paypal</button>
+					</div>
+
+					<div class="account">
+						<p>Account</p>
+						<input id="office-mail" placeholder="Account email" type="text"> <input id="office-password" placeholder="Account password" type="text"> <button class="request enable-button" id="office-request-login">Autologin</button>
+					</div>
+
+
+					<div class="size">
+						<div class="multi-select-office">
+							<label class="toggle-open-office" for="toggle-open-office">Select Size</label> <input id="toggle-open-office" type="checkbox">
+
+							<ul class="multi-select-options-office" id="office-size-dropdown">
+								<li><label><input data-sv tate="random" name="sizes" type="checkbox" value="random"><span>Random</span></label>
+								</li>
+
+								
+								<li><label><input data-sv tate="3" name="sizes" type="checkbox" value="3"><span>3</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="3.5" name="sizes" type="checkbox" value="3.5"><span>3.5</span></label>
+								</li>
+
+								
+								<li><label><input data-sv tate="4" name="sizes" type="checkbox" value="4"><span>4</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="4.5" name="sizes" type="checkbox" value="4.5"><span>4.5</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="5" name="sizes" type="checkbox" value="5"><span>5</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="5.5" name="sizes" type="checkbox" value="5.5"><span>5.5</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="6" name="sizes" type="checkbox" value="6"><span>6</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="6.5" name="sizes" type="checkbox" value="6.5"><span>6.5</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="7" name="sizes" type="checkbox" value="7"><span>7</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="7.5" name="sizes" type="checkbox" value="7.5"><span>7.5</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="8" name="sizes" type="checkbox" value="8"><span>8</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="8.5" name="sizes" type="checkbox" value="8.5"><span>8.5</span></label>
+								</li>
+
+								
+								<li><label><input data-sv tate="9" name="sizes" type="checkbox" value="9"><span>9</span></label>
+								</li>
+
+								
+								<li><label><input data-sv tate="9.5" name="sizes" type="checkbox" value="9.5"><span>9.5</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="10" name="sizes" type="checkbox" value="10"><span>10</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="10.5" name="sizes" type="checkbox" value="10.5"><span>10.5</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="11" name="sizes" type="checkbox" value="11"><span>11</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="11.5" name="sizes" type="checkbox" value="11.5"><span>11.5</span></label>
+								</li>
+
+
+								<li><label><input data-sv tate="12" name="sizes" type="checkbox" value="12"><span>12</span></label>
+								</li>
+
+
+							
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="mrporter-right" id="mrporter-content">
+					<p style="margin: 1em 0 1em 1em; color: #fff;">Mr Porter</p>
+
+
+					<div class="default">
+					
+						<button class="enable-button" id="mrporter-enable">Enable Mr Porter</button>
+						<button class="enable save" id="savebutton">Save</button>
+					</div>
+
+
+					<div class="mode">
+						<p>Mode</p>
+						<button class="autocart-r enable-button" id="mrporter-autocart">Auto Cart</button> <button class="autocart enable-button" id="mrporter-restock">Restock</button>
+					</div>
+
+
+					
+
+
+					<div class="size">
+						<div class="multi-select-mrporter">
+							<label class="toggle-open-mrporter" for="toggle-open-mrporter">Select Size</label> <input id="toggle-open-mrporter" type="checkbox">
+
+							<ul class="multi-select-options-mrporter" id="mrporter-size-dropdown">
+								<li><label><input data-state="random" name="sizes" type="checkbox" value="random"><span>random</span></label>
+								</li>
+
+
+								<li><label><input data-state="35.5" name="sizes" type="checkbox" value="35.5"><span>35.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="35 2/3" name="sizes" type="checkbox" value="35 2/3"><span>35 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="36" name="sizes" type="checkbox" value="36"><span>36</span></label>
+								</li>
+
+
+								<li><label><input data-state="36.5" name="sizes" type="checkbox" value="36.5"><span>36.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="37.5" name="sizes" type="checkbox" value="37.5"><span>37.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="37 1/3" name="sizes" type="checkbox" value="37 1/3"><span>37 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="38" name="sizes" type="checkbox" value="38"><span>38</span></label>
+								</li>
+
+
+								<li><label><input data-state="38.5" name="sizes" type="checkbox" value="38.5"><span>38.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="38 2/3" name="sizes" type="checkbox" value="38 2/3"><span>38 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="39" name="sizes" type="checkbox" value="39"><span>39</span></label>
+								</li>
+
+
+								<li><label><input data-state="39 1/3" name="sizes" type="checkbox" value="39 1/3"><span>39 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="40" name="sizes" type="checkbox" value="40"><span>40</span></label>
+								</li>
+
+
+								<li><label><input data-state="40.5" name="sizes" type="checkbox" value="40.5"><span>40.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="40 2/3" name="sizes" type="checkbox" value="40 2/3"><span>40 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="41" name="sizes" type="checkbox" value="41"><span>41</span></label>
+								</li>
+
+
+								<li><label><input data-state="42" name="sizes" type="checkbox" value="42"><span>42</span></label>
+								</li>
+
+
+								<li><label><input data-state="42.5" name="sizes" type="checkbox" value="42.5"><span>42.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="42 2/3" name="sizes" type="checkbox" value="42 2/3"><span>42 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="43" name="sizes" type="checkbox" value="43"><span>43</span></label>
+								</li>
+
+
+								<li><label><input data-state="43 1/3" name="sizes" type="checkbox" value="43 1/3"><span>43 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="44" name="sizes" type="checkbox" value="44"><span>44</span></label>
+								</li>
+
+
+								<li><label><input data-state="44.5" name="sizes" type="checkbox" value="44.5"><span>44.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="44 2/3" name="sizes" type="checkbox" value="44 2/3"><span>44 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="45" name="sizes" type="checkbox" value="45"><span>45</span></label>
+								</li>
+
+
+								<li><label><input data-state="45.5" name="sizes" type="checkbox" value="45.5"><span>45.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="45 1/3" name="sizes" type="checkbox" value="45 1/3"><span>45 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="46" name="sizes" type="checkbox" value="46"><span>46</span></label>
+								</li>
+
+
+								<li><label><input data-state="47.5" name="sizes" type="checkbox" value="47.5"><span>47.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="47 1/3" name="sizes" type="checkbox" value="47 1/3"><span>47 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="48" name="sizes" type="checkbox" value="48"><span>48</span></label>
+								</li>
+
+
+								<li><label><input data-state="48.5" name="sizes" type="checkbox" value="48.5"><span>48.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="49.5" name="sizes" type="checkbox" value="49.5"><span>49.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="49 1/3" name="sizes" type="checkbox" value="49 1/3"><span>49 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="50.5" name="sizes" type="checkbox" value="50.5"><span>50.5</span></label>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<div class="courir-right" id="courir-content">
+					<p style="margin: 1em 0 1em 1em; color: #fff;">Courir</p>
+
+
+					<div class="default">
+					
+						<button class="enable-button" id="courir-enable">Enable Courir</button>
+						<button class="enable save" id="savebutton">Save</button>
+					</div>
+
+
+					<div class="mode">
+						<p>Mode</p>
+						<button class="autocart-r enable-button" id="courir-autocart">Auto Cart & redirect</button>
+					</div>
+
+
+					
+
+
+					<div class="size">
+						<div class="multi-select-courir">
+							<label class="toggle-open-courir" for="toggle-open-courir">Select Size</label> <input id="toggle-open-courir" type="checkbox">
+
+							<ul class="multi-select-options-courir" id="courir-size-dropdown">
+								<li><label><input data-state="random" name="sizes" type="checkbox" value="random"><span>random</span></label>
+								</li>
+
+
+								<li><label><input data-state="35.5" name="sizes" type="checkbox" value="35.5"><span>35.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="35 2/3" name="sizes" type="checkbox" value="35 2/3"><span>35 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="36" name="sizes" type="checkbox" value="36"><span>36</span></label>
+								</li>
+
+
+								<li><label><input data-state="36.5" name="sizes" type="checkbox" value="36.5"><span>36.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="37.5" name="sizes" type="checkbox" value="37.5"><span>37.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="37 1/3" name="sizes" type="checkbox" value="37 1/3"><span>37 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="38" name="sizes" type="checkbox" value="38"><span>38</span></label>
+								</li>
+
+
+								<li><label><input data-state="38.5" name="sizes" type="checkbox" value="38.5"><span>38.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="38 2/3" name="sizes" type="checkbox" value="38 2/3"><span>38 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="39" name="sizes" type="checkbox" value="39"><span>39</span></label>
+								</li>
+
+
+								<li><label><input data-state="39 1/3" name="sizes" type="checkbox" value="39 1/3"><span>39 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="40" name="sizes" type="checkbox" value="40"><span>40</span></label>
+								</li>
+
+
+								<li><label><input data-state="40.5" name="sizes" type="checkbox" value="40.5"><span>40.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="40 2/3" name="sizes" type="checkbox" value="40 2/3"><span>40 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="41" name="sizes" type="checkbox" value="41"><span>41</span></label>
+								</li>
+
+
+								<li><label><input data-state="42" name="sizes" type="checkbox" value="42"><span>42</span></label>
+								</li>
+
+
+								<li><label><input data-state="42.5" name="sizes" type="checkbox" value="42.5"><span>42.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="42 2/3" name="sizes" type="checkbox" value="42 2/3"><span>42 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="43" name="sizes" type="checkbox" value="43"><span>43</span></label>
+								</li>
+
+
+								<li><label><input data-state="43 1/3" name="sizes" type="checkbox" value="43 1/3"><span>43 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="44" name="sizes" type="checkbox" value="44"><span>44</span></label>
+								</li>
+
+
+								<li><label><input data-state="44.5" name="sizes" type="checkbox" value="44.5"><span>44.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="44 2/3" name="sizes" type="checkbox" value="44 2/3"><span>44 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="45" name="sizes" type="checkbox" value="45"><span>45</span></label>
+								</li>
+
+
+								<li><label><input data-state="45.5" name="sizes" type="checkbox" value="45.5"><span>45.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="45 1/3" name="sizes" type="checkbox" value="45 1/3"><span>45 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="46" name="sizes" type="checkbox" value="46"><span>46</span></label>
+								</li>
+
+
+								<li><label><input data-state="47.5" name="sizes" type="checkbox" value="47.5"><span>47.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="47 1/3" name="sizes" type="checkbox" value="47 1/3"><span>47 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="48" name="sizes" type="checkbox" value="48"><span>48</span></label>
+								</li>
+
+
+								<li><label><input data-state="48.5" name="sizes" type="checkbox" value="48.5"><span>48.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="49.5" name="sizes" type="checkbox" value="49.5"><span>49.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="49 1/3" name="sizes" type="checkbox" value="49 1/3"><span>49 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="50.5" name="sizes" type="checkbox" value="50.5"><span>50.5</span></label>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="awlab-right" id="awlab-content">
+					<p style="margin: 1em 0 1em 1em; color: #fff;">Aw-Lab</p>
+
+					<div class="default">
+						<p>Default settings</p>
+						<button class="enable-button" id="awlab-enable">Enable Aw-lab</button>
+						<button class="enable save" id="savebutton">Save</button>
+					</div>
+
+					<div class="mode">
+						<p>Mode</p>
+						<button class="autocart-r enable-button" id="awlab-request">Request</button> <button class="autocart enable-button" id="awlab-mini">Ethereal Mini</button>
+					</div>
+
+					<div class="account">
+						<p>Account</p>
+						<input id="awlabAccountEmail"placeholder="Account email" type="text"> <input id="awlabAccountPassword" placeholder="Account password" type="text">
+						<p style="font-size: 13px; color: #ea677d"><i class="fas fa-exclamation-circle" style="margin-right: .3em;"></i>These fields may not be empty!</p>
+					</div>
+
+					
+					<div class="size">
+						<div class="multi-select-awlab">
+							<label class="toggle-open-awlab" for="toggle-open-awlab">Select Size</label> <input id="toggle-open-awlab" type="checkbox">
+
+							<ul class="multi-select-options-awlab" id="awlab-size-dropdown">
+								<li><label><input data-state="random" name="sizes" type="checkbox" value="random"><span>random</span></label>
+								</li>
+
+
+								<li><label><input data-state="35.5" name="sizes" type="checkbox" value="35.5"><span>35.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="35 2/3" name="sizes" type="checkbox" value="35 2/3"><span>35 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="36" name="sizes" type="checkbox" value="36"><span>36</span></label>
+								</li>
+
+
+								<li><label><input data-state="36.5" name="sizes" type="checkbox" value="36.5"><span>36.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="37.5" name="sizes" type="checkbox" value="37.5"><span>37.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="37 1/3" name="sizes" type="checkbox" value="37 1/3"><span>37 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="38" name="sizes" type="checkbox" value="38"><span>38</span></label>
+								</li>
+
+
+								<li><label><input data-state="38.5" name="sizes" type="checkbox" value="38.5"><span>38.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="38 2/3" name="sizes" type="checkbox" value="38 2/3"><span>38 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="39" name="sizes" type="checkbox" value="39"><span>39</span></label>
+								</li>
+
+
+								<li><label><input data-state="39 1/3" name="sizes" type="checkbox" value="39 1/3"><span>39 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="40" name="sizes" type="checkbox" value="40"><span>40</span></label>
+								</li>
+
+
+								<li><label><input data-state="40.5" name="sizes" type="checkbox" value="40.5"><span>40.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="40 2/3" name="sizes" type="checkbox" value="40 2/3"><span>40 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="41" name="sizes" type="checkbox" value="41"><span>41</span></label>
+								</li>
+
+
+								<li><label><input data-state="42" name="sizes" type="checkbox" value="42"><span>42</span></label>
+								</li>
+
+
+								<li><label><input data-state="42.5" name="sizes" type="checkbox" value="42.5"><span>42.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="42 2/3" name="sizes" type="checkbox" value="42 2/3"><span>42 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="43" name="sizes" type="checkbox" value="43"><span>43</span></label>
+								</li>
+
+
+								<li><label><input data-state="43 1/3" name="sizes" type="checkbox" value="43 1/3"><span>43 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="44" name="sizes" type="checkbox" value="44"><span>44</span></label>
+								</li>
+
+
+								<li><label><input data-state="44.5" name="sizes" type="checkbox" value="44.5"><span>44.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="44 2/3" name="sizes" type="checkbox" value="44 2/3"><span>44 2/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="45" name="sizes" type="checkbox" value="45"><span>45</span></label>
+								</li>
+
+
+								<li><label><input data-state="45.5" name="sizes" type="checkbox" value="45.5"><span>45.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="45 1/3" name="sizes" type="checkbox" value="45 1/3"><span>45 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="46" name="sizes" type="checkbox" value="46"><span>46</span></label>
+								</li>
+
+
+								<li><label><input data-state="47.5" name="sizes" type="checkbox" value="47.5"><span>47.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="47 1/3" name="sizes" type="checkbox" value="47 1/3"><span>47 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="48" name="sizes" type="checkbox" value="48"><span>48</span></label>
+								</li>
+
+
+								<li><label><input data-state="48.5" name="sizes" type="checkbox" value="48.5"><span>48.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="49.5" name="sizes" type="checkbox" value="49.5"><span>49.5</span></label>
+								</li>
+
+
+								<li><label><input data-state="49 1/3" name="sizes" type="checkbox" value="49 1/3"><span>49 1/3</span></label>
+								</li>
+
+
+								<li><label><input data-state="50.5" name="sizes" type="checkbox" value="50.5"><span>50.5</span></label>
+								</li>
+							</ul>
+						</div>
+					
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="page" id="Page4" style="display:none">
+		<div class="container">
+			<div class="delays active" id="delays">
+				<div class="left-container">
+					<i class="fas fa-tachometer-alt"></i>
+
+					<h2>Delays</h2>
+
+
+					<div class="toggle-delays">
+					</div>
+				</div>
+
+
+				<div class="right-container right-delays active">
+					<div class="content">
+						<p>Naked delay</p>
+						<input id="naked-delay" placeholder="3000" type="text">
+
+						<p>SNS delay</p>
+						<input id="sns-delay" placeholder="3000" type="text">
+
+						<p>Offspring delay</p>
+						<input id="os-delay" placeholder="3000" type="text">
+						<div class="modesettings">
+						<button class="normal enable-button" id="save-delays">Save Delays</button>
+					</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="main" id="main">
+				<div class="left-container">
+					<i class="fas fa-sliders-h"></i>
+
+					<h2>Settings</h2>
+
+
+					<div class="toggle-main">
+					</div>
+				</div>
+
+
+				<div class="right-container right-main">
+					
+					<div class="content">
+						<p id="webhook-text">Discord webhook</p>
+						<input id="webhook" placeholder="Webhook URL" type="text">
+						<p id="webhook-text">Refresh @ time</p>
+						<input id="refresh-timer" placeholder="09:05:15" type="text">
+						<div class="modesettings">
+						<button class="normal enable-button" id="checkout-sound">Checkout Sound</button>
+						<button class="normal enable-button" id="save-settings2">Save Settings</button>
+						</div>
+					</div>
+
+						
+					
+				</div>
+			</div>
+
+
+			<div class="key-info" id="key-info">
+				<div class="left-container">
+					<i class="fa fa-key"></i>
+
+					<h2>Key Info</h2>
+
+
+					<div class="toggle-key">
+					</div>
+				</div>
+
+
+				<div class="right-container right-key">
+					<div class="content">
+						<img alt="" id="license-picture"src="../images/foot.png" style="border-radius: 50%;" width="80px">
+
+						<p>Key</p>
+
+
+						<p class="secondary" id="license">XXXX-XXXX-XXXX-XXXX</p>
+
+
+						<p>Type</p>
+
+
+						<p class="secondary" id="license-type">Lifetime</p>
+
+
+						<p>Renewal</p>
+
+
+						<p class="secondary" id="license-renewal">23/09/2099</p>
+
+
+						<p>Unbindable</p>
+
+
+						<p class="secondary" id="license-unbindable">False</p>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+	</div>
+
+
+	<div class="page" id="Page3" style="display:none">
+		<div class="container">
+			<div class="inputs-left">
+				<p class="title" style="text-align: center;">Shipping Details</p>
+
+
+				<div class="inputs">
+					<input hidden id="profile-id">
+					<input class="profileClass-f-name" id="f-name" placeholder="Full name" type="text"> <input class="profileClass-zip" id="zip" placeholder="Zip" type="text"> <input class="profileClass-email" id="email" placeholder="Email" type="text"> <input class="profileClass-phone" id="phone" placeholder="Phone number" type="text"> <input class="profileClass-address1" id="address1" placeholder="Address 1" type="text"> <input class="profileClass-address2" id="address2" placeholder="Address 2" type="text"> <input class="profileClass-city" id="city" placeholder="City" type="text">  <input class="profileClass-pname" id="pname" placeholder="Profile name" type="text">
+					<select type="text" id="country" class="profileClass-country">
+						<option value="null">Select Country</option>
+					</select>
+					<select type="text" id="state" class="profileClass-state">
+						<option value="null">Select State</option>
+					</select>
+					<div class="billing">
+						<p class="billing-title" style="text-align: center; color: #fff; margin: 2em 0 1em 0;">Billing</p>
+						<input class="profileClass-card-profile" id="card-number" placeholder="Card number" type="text"> <input class="profileClass-cvv-profile" id="card-cvv" placeholder="CVV" type="text"> 
+						
+						<select class="profileClass-year"id="month">
+							<option disabled selected value="Select month">
+								Select month
+							</option>
+						
+							<option value="01">01</option>
+							<option value="02">02</option>
+							<option value="03">03</option>
+							<option value="04">04</option>
+							<option value="05">05</option>
+							<option value="06">06</option>
+							<option value="07">07</option>
+							<option value="08">08</option>
+							<option value="09">09</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+					
+						</select> 
+						<select class ="profileClass-card-select" id="year">
+							<option disabled selected value="Select year">
+								Select year
+							</option>
+							<option value="2021">2021</option>
+							<option value="2022">2022</option>
+							<option value="2023">2023</option>
+							<option value="2024">2024</option>
+							<option value="2025">2025</option>
+							<option value="2026">2026</option>
+							<option value="2027">2027</option>
+							<option value="2028">2028</option>
+							<option value="2029">2029</option>
+							<option value="2030">2030</option>
+							<option value="2031">2031</option>
+							<option value="2032">2032</option>
+						</select>
+					</div>
+
+
+					<div class="save">
+						<div class="modesettings">
+						
+						<button id="new-profile">New profile</button>
+						<button id="save-profile">Save profile</button>
+						<button id="export-profile">Export data</button>
+						<button id="import-profile">Import data</button>
+						
+					</div>
+					<!--	<button id="delete-profile">Delete profile</button>-->
+					
+					</div>
+					
+				</div>
+			</div>
+
+
+			<div class="profile-right">
+				<p class="title">Profiles</p>
+
+				<!--
+				<div class="card">
+					<div class="top">
+						<div id="f-name-mirror">
+						</div>
+					</div>
+
+
+					<div class="bottom">
+						<div class="expiry-cvv" id="expiry-cvv">
+							<div class="cvv-mirror" id="cvv-mirror">
+							</div>
+						</div>
+
+
+						<div class="card-number-mirror" id="card-number-mirror">
+						</div>
+					</div>
+				</div>
+				-->
+
+
+			
+				<div id="profiles-tab" class="profilesMain">
+					<div class="profiles-tab">
+						<p class="profiles-title">Cornelius</p>
+						<p class="profiles-mail">etherealadmin@ethereal.com</p>
+						<p class="profiles-card">**** 5980</p>
+					</div>
+					
+				</div>
+				<p class="title">Select default profile</p>
+				<select id="default-select" class="default-select" name="select-default-profile">
+				</select>
+			</div>
+			<!--    <div class="profiles-container">
+                    <div class="profile">
+                        <p id="profile-name">Foot Revo 21</p>
+                        <div class="card-info">
+                        <p id="card-name">Muhammad Foot</p>
+                        <h4 id="card-number"><span style="filter: blur(5px);">5349 4310 5319</span> 6922</h4>
+                        </div>
+                    </div>
+                </div>
+            -->
+		</div>
+	</div>
+
+</body>
+<script src="../src/main.js"></script>
+<script src="../images/thirdParty/js/iziToast.min.js"></script>
+<script src="../images/thirdParty/js/countries.js"></script>
+</html>
+
